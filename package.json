@@ -1,0 +1,17 @@
+{
+  "name": "fil-email-design",
+  "version": "1.0.0",
+  "description": "A design done in code of a responsive email",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Maclean",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

@@ -1,0 +1,61 @@
+h1, h2, h3, h4, h5, h6, p,
+pre, form, blockquote, div,
+th, td, fieldset, figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+fieldset {
+    border:none;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+textarea {
+    height: auto;
+    padding: 0; margin: 0;
+    border: 0;
+    font-family: $body-font-family;
+    font-size: $global-font-size; line-height: $global-line-height;
+    background-color: $white;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:focus {
+        background-color: $white;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+select {
+    height: auto;
+    padding: 0; margin: 0;
+    border: 0;
+    font-family: $web-safe-font;
+    font-size: $global-font-size; line-height: $global-line-height;
+    background-color: $white;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}

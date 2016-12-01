@@ -1,0 +1,284 @@
+@for $i from 1 through 10 {
+
+  .nudge-p-#{ $i } {
+    padding-bottom: #{ $i }px;
+  }
+
+}
+
+// @for $i from 1 through 10 {
+//
+//     @each $breakpoint in $breakpoints {
+//
+//         @include breakpoint( #{ nth( $breakpoint, 1 ) } down ) {
+//
+//             .#{ nth( $breakpoint, 1 ) }-nudge-p-#{ $i } {
+//               padding-bottom: #{ $i }px;
+//             }
+//
+//         }
+//
+//     }
+//
+// }
+
+.rhythmic-xxs {
+  padding-top: $rhythm-base * 0.16666666666;
+  padding-bottom: $rhythm-base * 0.16666666666; //4
+}
+
+.rhythmic-xs {
+  padding-top: $rhythm-base * 0.5;
+  padding-bottom: $rhythm-base * 0.5; //12
+}
+
+.rhythmic-s {
+  padding-top: $rhythm-base * 0.75;
+  padding-bottom: $rhythm-base * 0.75; //18
+}
+
+.rhythmic {
+  padding-top: $rhythm-base;
+  padding-bottom: $rhythm-base; //24
+}
+
+.rhythmic-m {
+  margin-top: $rhythm-base;
+  margin-bottom: $rhythm-base; //24
+}
+
+.rhythmic-l {
+  padding-top: $rhythm-base * 1.16666666666; //28
+  padding-bottom: $rhythm-base * 1.16666666666;
+}
+
+.rhythmic-xl {
+  padding-top: $rhythm-base * 1.5; // 36
+  padding-bottom: $rhythm-base * 1.5;
+}
+
+.rhythmic-2x {
+  padding-top: $rhythm-base * 2; //48
+  padding-bottom: $rhythm-base * 2;
+}
+
+.rhythmic-m-2x {
+  margin-top: $rhythm-base * 2; //48
+  margin-bottom: $rhythm-base * 2;
+}
+
+.rhythmic-3x {
+  padding-top: $rhythm-base * 3;
+  padding-bottom: $rhythm-base * 3;
+}
+
+@for $i from 0 through 5 {
+
+    .rhythm-m-#{$i} { margin-bottom: $i * $rhythm-base }
+    .rhythm-m-#{$i}-half { margin-bottom: ( $i + 0.5 ) * $rhythm-base }
+
+    .rhythm-m-#{$i}--top { margin-top: $i * $rhythm-base }
+    .rhythm-m-#{$i}-half--top { margin-top: ( $i + 0.5 ) * $rhythm-base }
+
+    .rhythm-p-#{$i} {  padding-bottom: $i * $rhythm-base }
+    .rhythm-p-#{$i}-half { padding-bottom: ( $i + 0.5 ) * $rhythm-base }
+
+    .rhythm-p-#{$i}--top {  padding-top: $i * $rhythm-base }
+    .rhythm-p-#{$i}-half--top { padding-top: ( $i + 0.5 ) * $rhythm-base }
+
+}
+
+// @for $i from 0 through 5 {
+//
+//     @each $breakpoint in $breakpoints {
+//
+//         @include breakpoint( #{ nth( $breakpoint, 1 ) } down ) {
+//
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-m-#{$i} { margin-bottom: rhythm( $i ); }
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-m-#{$i}-half { margin-bottom: rhythm( ( $i + 0.5 ) ); }
+//
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-m-#{$i}--top { margin-top: rhythm( $i ); }
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-m-#{$i}-half--top { margin-top: rhythm( ( $i + 0.5 ) ); }
+//
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-p-#{$i} { padding-bottom: rhythm( $i ); }
+//             .#{ nth( $breakpoint, 1 ) }-rhythm-p-#{$i}-half { padding-bottom: rhythm( ( $i + 0.5 ) ); }
+//
+//         }
+//
+//     }
+//
+// }
+//
+// @each $breakpoint in $breakpoints {
+//
+//     @include breakpoint( #{ nth( $breakpoint, 1 ) } down ) {
+//
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-xxs { padding-top: rhythm( 0.25 ); padding-bottom: rhythm( 0.25 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-xs { padding-top: rhythm( 0.5 ); padding-bottom: rhythm( 0.5 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-s { padding-top: rhythm( 0.75 ); padding-bottom: rhythm( 0.75 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic { padding-top: rhythm( 1 ); padding-bottom: rhythm( 1 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-l { padding-top: rhythm( 1.25 ); padding-bottom: rhythm( 1.25 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-xl { padding-top: rhythm( 1.5 ); padding-bottom: rhythm( 1.5 ); }
+//         .#{ nth( $breakpoint, 1 ) }-rhythmic-xxl { padding-top: rhythm( 2.5 ); padding-bottom: rhythm( 2.5 );}
+//
+//     }
+//
+// }
+
+
+.gutted-xxs {
+    padding-right: gutter( 0.25 );
+    padding-left: gutter( 0.25 );
+}
+
+.gutted-xs {
+    padding-right: gutter( 0.5 );
+    padding-left: gutter( 0.5 );
+}
+
+.gutted-s {
+    padding-right: gutter( 0.75 );
+    padding-left: gutter( 0.75 );
+}
+
+.gutted {
+    padding-right: gutter( 1 );
+    padding-left: gutter( 1 );
+}
+
+.gutted-l {
+    padding-right: gutter( 1.25 );
+    padding-left: gutter( 1.25 );
+}
+
+.gutted-xl {
+    padding-right: gutter( 1.5 );
+    padding-left: gutter( 1.5 );
+}
+
+.gutted-3x {
+    padding-right: gutter( 3 );
+    padding-left: gutter( 3 );
+}
+
+
+
+
+.gutted-right-xxs {
+    padding-right: gutter( 0.25 );
+}
+
+.gutted-right-xs {
+    padding-right: gutter( 0.5 );
+}
+
+.gutted-right-s {
+    padding-right: gutter( 0.75 );
+}
+
+.gutted-right {
+    padding-right: gutter( 1 );
+}
+
+.gutted-right-l {
+    padding-right: gutter( 1.25 );
+}
+
+
+
+
+.gutted-left-xxs {
+    padding-left: gutter( 0.25 );
+}
+
+.gutted-left-xs {
+    padding-left: gutter( 0.5 );
+}
+
+.gutted-left-s {
+    padding-left: gutter( 0.75 );
+}
+
+.gutted-left {
+    padding-left: gutter( 1 );
+}
+
+
+.gutted-m-right-xxs {
+    margin-right: gutter( 0.25 );
+}
+
+.gutted-m-right-xs {
+    margin-right: gutter( 0.5 );
+}
+
+.gutted-m-right-s {
+    margin-right: gutter( 0.75 );
+}
+
+.gutted-m-right {
+    margin-right: gutter( 1 );
+}
+
+.gutted-m {
+    margin-left: gutter( 1 );
+    margin-right: gutter( 1 );
+}
+
+.gutted-m-right-2x {
+    margin-right: gutter( 2 );
+}
+
+.gutted-p-right-2x {
+    padding-right: gutter( 2 );
+}
+.gutted-p-left-2x {
+    padding-left: gutter( 2 );
+}
+
+
+
+.gutted-left-xxs {
+    padding-left: gutter( 0.25 );
+}
+
+.gutted-left-xs {
+    padding-left: gutter( 0.5 );
+}
+
+.gutted-left-s {
+    padding-left: gutter( 0.75 );
+}
+
+.gutted-left {
+    padding-left: gutter( 1 );
+}
+
+
+.gutted-m-left-xxs {
+    margin-left: gutter( 0.25 );
+}
+
+.gutted-m-left-xs {
+    margin-left: gutter( 0.5 );
+}
+
+.gutted-m-left-s {
+    margin-left: gutter( 0.75 );
+}
+
+.gutted-m-left {
+    margin-left: gutter( 1 );
+}
+
+.gutted-m-left-l {
+    margin-left: gutter( 1.25 );
+}
+
+.gutted-m-left-xl {
+    margin-left: gutter( 1.5 );
+}
+
+.gutted-m-left-xxl {
+    margin-left: gutter( 1.75 );
+}

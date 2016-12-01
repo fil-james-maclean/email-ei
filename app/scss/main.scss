@@ -1,0 +1,51 @@
+/*
+* FIL Flatsite
+*/
+
+/*
+* RESETS
+*/
+@import "flatsite-css/resets/normalize";
+
+/*
+* TOOLS
+*/
+@import "flatsite-css/tools/units";
+@import "flatsite-css/tools/mixins";
+
+/*
+* GLOBAL SETTINGS
+*/
+@import "flatsite-css/settings/variables";
+
+/*
+* SETTINGS
+*/
+@import "flatsite-css/resets/reset";
+@import "flatsite-css/settings/fonts";
+@import "flatsite-css/settings/typography";
+
+/*
+* HELPERS
+*/
+@import "flatsite-css/helpers/spacing";
+@import "flatsite-css/helpers/colours";
+@import "flatsite-css/helpers/text";
+
+
+
+* {
+	margin:0;
+	padding:0;
+}
+* { font-family: Arial, sans-serif; }
+
+img {
+	max-width: 100%;
+}
+
+
+.wrap {
+	max-width: 600px;
+	margin: auto;
+}

@@ -1,0 +1,36 @@
+/*
+Colour Palette
+
+The palette contains all colours used throughout the site.
+
+markup:
+colours.html
+
+Styleguide 1.1
+
+*/
+
+.primary,
+.secondary {
+    h1 {
+      margin: 0;
+    }
+}
+
+.secondary {
+    margin-top: 2rem;
+}
+
+
+.box {
+  font-size: 15px;
+  height: 71px;
+  margin: 24px 0;
+  width: 71px;
+}
+
+
+.strike-wrap {
+  border: 1px solid $grey25;
+}
+

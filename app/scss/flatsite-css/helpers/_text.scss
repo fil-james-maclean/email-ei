@@ -1,0 +1,65 @@
+/**
+ * Alignment
+ */
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+/**
+ * Weights
+ */
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.font-weight-bold {
+    font-weight: bold; // Use <strong> where possible
+}
+
+
+
+
+/**
+ * Misc
+ */
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-break {
+    word-break: break-all;
+}
+
+.text-line-1 {
+    line-height: 1;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-websafe {
+    font-family: $web-safe-font;
+}

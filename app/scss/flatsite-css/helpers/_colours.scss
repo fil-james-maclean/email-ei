@@ -1,0 +1,47 @@
+@each $colour in $FIL {
+
+    .bg-#{ nth( $colour, 1 ) } {
+        background-color: #{ nth( $colour, 2 ) };
+    }
+
+    .text-#{ nth( $colour, 1 ) } {
+        color: #{ nth( $colour, 2 ) };
+    }
+
+}
+
+@each $colour in $FIL-FNW {
+
+    .bg-#{ nth( $colour, 1 ) } {
+        background-color: #{ nth( $colour, 2 ) };
+    }
+
+    .text-#{ nth( $colour, 1 ) } {
+        color: #{ nth( $colour, 2 ) };
+    }
+
+}
+
+@each $colour in $FIL-Charting {
+
+    .bg-#{ nth( $colour, 1 ) } {
+        background-color: #{ nth( $colour, 2 ) };
+    }
+
+    .text-#{ nth( $colour, 1 ) } {
+        color: #{ nth( $colour, 2 ) };
+    }
+
+}
+
+@each $colour in $FIL-Helpers {
+
+    .bg-#{ nth( $colour, 1 ) } {
+        background-color: #{ nth( $colour, 2 ) };
+    }
+
+    .text-#{ nth( $colour, 1 ) } {
+        color: #{ nth( $colour, 2 ) };
+    }
+
+}

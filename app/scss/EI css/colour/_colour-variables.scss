@@ -1,0 +1,118 @@
+
+
+$grey85:      #262626;
+$grey60:      #666666;
+$grey25:      #bfbfbf;
+$grey15:      #d9d9d9;
+$grey3:       #f7f7f7;
+$white:       #ffffff;
+
+
+$orange1:     #f26730;
+$orange2:     #e57725;
+$orange3:     #ff8d31;
+
+
+$blue1:       #006193;
+$blue2:       #016fad;
+$blue3:       #00a6e0;
+$blue4:       #eaf2f6;
+
+
+$annotation:  #ff00f8;
+
+
+$green1:      #339900;
+$green2:      #91cc9b;
+
+
+$red1:        #cc0000;
+$red2:        #e78e91;
+
+
+$yellow1:     #f0d202;
+$yellow2:     #fffdf3;
+
+
+$FNW-grey1:   #3e4552;
+$FNW-grey2:   #515b6b;
+$FNW-grey3:   #606b7e;
+$FNW-grey4:   #868f9e;
+
+
+$chart1:      #024a7a;
+$chart2:      #1dade2;
+$chart3:      #6f9824;
+$chart4:      #ffcd00;
+$chart5:      #de5e06;
+$chart6:      #9e5dcf;
+$chart7:      #6893b0;
+$chart8:      #011e31;
+$chart9:      #757a02;
+$chart10:     #cfd636;
+$chart11:     #fb9914;
+$chart12:     #7f05a2;
+$chart13:     #78ceee;
+$chart14:     #0c465b;
+$chart15:     #a9c27c;
+$chart16:     #435c16;
+$chart17:     #653e08;
+$chart18:     #c578ff;
+
+$colors: (
+        grey85: $grey85,
+        grey60: $grey60,
+        grey25: $grey25,
+        grey15: $grey15,
+        grey3: $grey3,
+        white: $white,
+        orange1: $orange1,
+        orange2: $orange2,
+        orange3: $orange3,
+        blue1: $blue1,
+        blue2: $blue2,
+        blue3: $blue3,
+        blue4: $blue4,
+        annotation: $annotation,
+        green1: $green1,
+        green2: $green2,
+        red1: $red1,
+        red2: $red2,
+        yellow1: $yellow1,
+        yellow2: $yellow2,
+        FNW-grey1: $FNW-grey1,
+        FNW-grey2: $FNW-grey2,
+        FNW-grey3: $FNW-grey3,
+        FNW-grey4: $FNW-grey4,
+        chart1: $chart1,
+        chart2: $chart2,
+        chart3: $chart3,
+        chart4: $chart4,
+        chart5: $chart5,
+        chart6: $chart6,
+        chart7: $chart7,
+        chart8: $chart8,
+        chart9: $chart9,
+        chart10: $chart10,
+        chart11: $chart11,
+        chart12: $chart12,
+        chart13: $chart13,
+        chart14: $chart14,
+        chart15: $chart15,
+        chart16: $chart16,
+        chart17: $chart17,
+        chart18: $chart18
+);
+
+@each $name, $val in $colors {
+  .clr--#{$name} {
+    color: #{$val};
+  }
+
+  .bgclr-#{$name} {
+    background: #{$val};
+  }
+}
+
+
+

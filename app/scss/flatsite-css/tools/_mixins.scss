@@ -1,0 +1,35 @@
+@function gutter( $lines: 1, $font-size: $base-font-size, $offset: 0 ) {
+
+    $gutter: convert-length( $lines * $base-gutter - $offset, $rhythm-unit, $font-size );
+
+    @if unit( $gutter ) == px {
+
+        $gutter: floor( $gutter );
+
+    }
+
+    @return $gutter;
+
+}
+
+@function rhythm( $lines: 1, $font-size: $base-font-size, $offset: 0 ) {
+
+    $rhythm: convert-length( $lines * $rhythm-base - $offset, $rhythm-unit, $font-size );
+
+    @if unit( $rhythm ) == px {
+
+        $rhythm: floor( $rhythm );
+
+    }
+
+    @return $rhythm;
+
+}
+
+@mixin css-gradient( $color1, $color2 ) {
+    background: $color1;
+    background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ $color1 }', endColorstr='#{ $color2 }',GradientType=0 );
+}

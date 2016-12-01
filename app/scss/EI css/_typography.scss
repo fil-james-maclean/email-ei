@@ -1,0 +1,193 @@
+// Typography
+//
+// Detailing all aspects of our typography here....
+//
+// Styleguide 1.2
+
+// Font face and sizes
+
+//
+// Basic Font and size definitions here.....
+//
+// markup:
+// typography-basic.html
+//
+// Styleguide 1.2.1
+
+// Color variants
+//
+// markup:
+// typography-color.html
+//
+// Styleguide 1.2.2
+
+// Default font definitions
+//
+// markup:
+// typography-default.html
+//
+// Styleguide 1.2.3
+
+
+
+
+@font-face {font-family: regularFont; src: url(#{$fonts-path}NeuzeitGro-Reg.woff);}
+@font-face {font-family: lightFont; src: url(#{$fonts-path}NeuzeitGro-Lig.woff);}
+@font-face {font-family: boldFont; src: url(#{$fonts-path}NeuzeitGro-Bol.woff);}
+
+
+body{
+  font-family: Arial!important;
+}
+
+.brand-font {
+  color: $grey85;
+  font-family: $lightFont;
+  font-weight: normal;
+  margin: 0 0 1em 0;
+}
+
+.brand-font-1 {
+  @extend .brand-font;
+  font-size: 48px;
+}
+
+.brand-font-2 {
+  @extend .brand-font;
+  font-size: 32px;
+}
+
+.brand-font-3 {
+  @extend .brand-font;
+  font-size: 26px;
+}
+
+.brand-font-4 {
+  @extend .brand-font;
+  font-size: 18px;
+}
+
+.brand-font-4.heading-margin{margin: 17px 0;}
+
+.regular-text {
+  color: $grey85;
+  font-family: $baseFont;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+  .default-text, .input-notes{
+    color: $grey85;
+    font-family: $baseFont;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+.default-text__medium {
+  @extend .default-text;
+  font-size: 15px;
+}
+
+.text__heavy{
+  color: $grey85;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: $baseFont;
+}
+
+.small-text__light-bold{
+  color: $grey60;
+  font-weight: bold;
+  font-size: 12px!important;
+}
+
+.small-text__heavy{
+  @extend .text__heavy;
+  font-size: 12px;
+}
+
+.text__light {
+  color: $grey60;
+  font-size: 15px;
+  font-family: $baseFont;
+}
+
+.text__medium {
+  color: $grey60;
+  font-size: 15px;
+}
+
+.small-text__medium {
+  @extend .text__medium;
+  font-size: 12px;
+}
+
+.small-text__light{
+  @extend .text__light;
+  font-size: 12px!important;
+}
+
+.text__positive {
+  color: $green1;
+}
+
+.text__negative {
+  color: $red1;
+}
+
+.text__strong {
+  font-weight: bold;
+}
+.paragraph{
+  margin-bottom:14px;
+}
+
+h1 {
+ @extend .brand-font-1;
+}
+
+h2 {
+ @extend .brand-font-2;
+}
+
+h3 {
+  @extend .brand-font-3;
+}
+
+h4 {
+  @extend .regular-text;
+}
+
+h5 {
+  @extend .default-text__medium;
+}
+
+h6 {
+  @extend .default-text__medium;
+}
+
+p {
+  @extend .default-text;
+
+}
+
+p.p-spaced {
+  margin-bottom: 15px;
+}
+
+.debit-card-payment-list{
+  ul li{
+    font-family: $baseFont;
+    color: $grey85;
+  }
+  li{
+    margin-bottom:10px;
+  }
+}
+ul.square {
+  margin-bottom: 0;
+  li {
+    list-style-type: initial;
+  }
+}
